@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Kanishka ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Dancing Script', cursive, 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji';
+background:#5a0f2e;
+color:white;
+overflow:auto;
+}
+
+/* slides */
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+opacity:0;
+transition:0.6s;
+overflow-y:auto;
+padding:20px 10px;
+}
+.active{display:flex;opacity:1;}
+
+/* background */
+.bg{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0.3;
+}
+
+/* content */
+.content{
+z-index:2;
+max-width:500px;
+}
+
+/* photo */
+.photo{
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:15px;
+border:3px solid white;
+margin-top:15px;
+}
+
+/* text */
+h1{font-size:22px;}
+h2{font-size:20px;}
+p{font-size:16px;line-height:1.6;}
+
+/* button */
+button{
+padding:10px 20px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+background:white;
+color:#5a0f2e;
+}
+
+/* letter */
+.letter{
+display:none;
+position:absolute;
+width:90%;
+height:80%;
+background:pink;
+color:black;
+padding:20px;
+overflow-y:auto;
+border-radius:12px;
+z-index:5;
+}
+
+/* grid */
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:8px;
+max-height:50vh;
+overflow:auto;
+}
+.box{
+background:rgba(255,255,255,0.2);
+padding:8px;
+border-radius:8px;
+}
+
+/* hearts */
+.heart{
+position:fixed;
+bottom:-20px;
+pointer-events:none;
+animation:floatUp linear infinite;
+}
+@keyframes floatUp{
+0%{transform:translateY(0);opacity:0;}
+30%{opacity:1;}
+100%{transform:translateY(-110vh);opacity:0;}
+}
+
+/* fireworks */
+.fire{
+position:absolute;
+top:8%;
+font-size:22px;
+animation:burst 1.5s infinite;
+}
+@keyframes burst{
+0%{transform:scale(0);opacity:1;}
+100%{transform:scale(2);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<div class="slide active" id="s1">
+<img src="image1.jpg" class="bg">
+<div class="fire" style="left:20%">🎆</div>
+<div class="fire" style="left:60%">🎇</div>
+
+<div class="content">
+<h1>Happy Birthday Kanishka 🎉</h1>
+<img src="img1.jpg.jpeg" class="photo">
+<button onclick="next(1)">Next</button>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide" id="s2">
+<img src="image2.jpg" class="bg">
+<div class="content">
+<h1>Happy Birthday Kani 🎂</h1>
+<div onclick="next(2)" style="font-size:60px">🎂</div>
+<p>Tap the cake 🎂</p>
+<img src="img2.jpg.jpeg" class="photo">
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide" id="s3">
+<img src="image3.jpg" class="bg">
+<div class="content">
+<div onclick="openLetter()" style="font-size:60px">💌</div>
+<p>Tap the letter 💌</p>
+<img src="img3.jpg.jpeg" class="photo">
+</div>
+
+<div class="letter" id="letter">
+<p>
+
+Before I say anything... Happy Birthday to the most special person in my life❤️. From the moment you entered my life, everything slowly started changing. You didn’t just become a part of my days—you became my happiness. A single message from you can make my whole day better, and without hearing from you, something always feels missing.
+
+Your smile, the way you talk, your cute childishness, and the way you understand people so deeply... these are the reasons I admire you more and more every single day. At some point, I stopped seeing this as just a simple feeling. It became something deeper... something real. I didn’t plan it, but I fell for you.
+
+And today, I just want to say it honestly—I love you. I know your past hasn’t been easy, and I truly understand that. I want you to know that I will never hurt you like that. All I wish is to give you genuine love, care, and respect.
+
+I’m not here to rush you or force an answer. Take your time, understand your heart... and whenever you feel the same, you can come to me. No matter how long it takes, I’ll be here waiting for you. And through that time, I’ll stay connected with you—talking to you, sharing moments, and meeting you whenever possible... because every moment with you matters to me.
+
+I promise to be honest, to stand by your side, and to always make you feel valued and cared for. So today, with all my heart... Will you share your life with me? ❤️❤️
+
+I truly like you ❤️
+
+"❤️You're not just beautiful... there's something about your presence that feels calm and real."
+"Your smile is beautiful, but what I admire more is your heart."
+"Anyone can look good, but the way you think and understand people—that's rare."
+"It's not just your looks... it's your kindness and the way you carry yourself that makes you special."
+"The more I get to know you, the more I realise your beauty is not just outside, it's in who you are."
+"Your childishness, your honesty, and your caring nature... that's what makes you truly beautiful to me."
+"You have this simple, natural beauty... but your character is what makes it unforgettable."
+"I admire the way you stay kind and genuine... that's something not everyone has.❤️"
+
+</p>
+
+<button onclick="next(3)">Next</button>
+</div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide" id="s4">
+<img src="img4.jpg.jpeg" class="bg">
+<div class="content">
+<h2>Kanishka in 20 Languages ❤️</h2>
+<div class="grid">
+<div class="box">Kanishka ❤️</div>
+<div class="box">कानिष्का ❤️</div>
+<div class="box">কানিশকা ❤️</div>
+<div class="box">கனிஷ்கா ❤️</div>
+<div class="box">కనిష్క ❤️</div>
+<div class="box">ಕಣಿಷ್ಕ ❤️</div>
+<div class="box">കനിഷ്ക ❤️</div>
+<div class="box">ਕਨਿਸ਼ਕਾ ❤️</div>
+<div class="box">કનિષ્કા ❤️</div>
+<div class="box">カニシュカ ❤️</div>
+<div class="box">카니슈카 ❤️</div>
+<div class="box">Канишка ❤️</div>
+<div class="box">Κανίσκα ❤️</div>
+<div class="box">Kanişka ❤️</div>
+<div class="box">Kaniszka ❤️</div>
+<div class="box">Kanishka ❤️</div>
+<div class="box">Kanishka ❤️</div>
+<div class="box">Kanishka ❤️</div>
+<div class="box">Kanishka ❤️</div>
+<div class="box">Kanishka ❤️</div>
+</div>
+<button onclick="next(4)">Next</button>
+</div>
+</div>
+
+<!-- Slide 5 -->
+<div class="slide" id="s5">
+<img src="img5.jpg.jpeg" class="bg">
+<div class="content">
+<h2>I Love You in 20 Languages ❤️</h2>
+<div class="grid">
+<div class="box">I love you ❤️</div>
+<div class="box">Je t'aime ❤️</div>
+<div class="box">Te amo ❤️</div>
+<div class="box">Ich liebe dich ❤️</div>
+<div class="box">Ti amo ❤️</div>
+<div class="box">Eu te amo ❤️</div>
+<div class="box">我爱你 ❤️</div>
+<div class="box">愛してる ❤️</div>
+<div class="box">사랑해 ❤️</div>
+<div class="box">Я тебя люблю ❤️</div>
+<div class="box">أنا أحبك ❤️</div>
+<div class="box">मैं तुमसे प्यार करता हूँ ❤️</div>
+<div class="box">நான் உன்னை காதலிக்கிறேன் ❤️</div>
+<div class="box">నేను నిన్ను ప్రేమిస్తున్నాను ❤️</div>
+<div class="box">ನಾನು ನಿನ್ನ ಪ್ರೀತಿಸುತ್ತೇನೆ ❤️</div>
+<div class="box">ഞാൻ നിന്നെ സ്നേഹിക്കുന്നു ❤️</div>
+<div class="box">Ik hou van jou ❤️</div>
+<div class="box">Jeg elsker dig ❤️</div>
+<div class="box">Mahal kita ❤️</div>
+<div class="box">S'agapo ❤️</div>
+</div>
+<button onclick="next(5)">Next</button>
+</div>
+</div>
+
+<!-- Slide 6 -->
+<div class="slide" id="s6">
+<img src="image6.jpg" class="bg">
+<div class="content">
+<h2>No matter how many languages exist in the world...</h2>
+
+<p>
+No matter how many languages exist in the world, none of them are enough to express what I truly feel for you.<br><br>
+
+Every moment with you matters to me, every smile of yours means something to me, and every memory with you is special.<br><br>
+
+I don’t need many words… just this one truth — I Love You ❤️<br><br>
+
+“I like you a lot and I want us to be together, but I’m more about emotional connection than anything physical.”<br><br>
+
+I want to see your smile always, and I would do anything to keep it that way.
+</p>
+
+<img src="img6.jpg.jpeg" class="photo">
+<button onclick="next(6)">Next</button>
+</div>
+</div>
+
+<!-- Slide 7 -->
+<div class="slide" id="s7">
+<img src="image7.jpg" class="bg">
+<div class="content">
+<h2>❤️A Few Words I Couldn't Say...🎶</h2>
+
+<p>
+❤️Maru varthai pesaadhae<br>
+Madimeedhu nee thoongidu<br>
+Imai pola naan kaakha<br>
+Kanavai nee maridu❤️<br><br>
+
+❤️Mayil thogai pollae<br>
+Viral unnai varudum<br>
+Manappaadamai<br>
+Uraiyadal nigazhum❤️<br><br>
+
+❤️Vizhi neerum veen aaga<br>
+Imaithanda koodathena<br>
+Thuliyaaga naan serththen<br>
+Kadalaaga kannaanadhae❤️<br><br>
+
+❤️Maranthaalum naan unnai<br>
+Ninaikaadha naal illaiyae<br>
+Pirinthalum en anbu<br>
+Orupodhum poi illaiyae❤️
+</p>
+
+<img src="img7.jpg.jpeg" class="photo">
+</div>
+</div>
+
+<script>
+function next(n){
+document.getElementById('s'+n).classList.remove('active');
+if(document.getElementById('s'+(n+1))){
+document.getElementById('s'+(n+1)).classList.add('active');
+}
+}
+
+function openLetter(){
+document.getElementById('letter').style.display='block';
+}
+
+for(let i=0;i<25;i++){
+let h=document.createElement('div');
+h.className='heart';
+h.innerHTML='❤️';
+h.style.left=Math.random()*100+'vw';
+h.style.fontSize=(10+Math.random()*20)+'px';
+h.style.animationDuration=(5+Math.random()*5)+'s';
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
